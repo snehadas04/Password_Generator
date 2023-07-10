@@ -8,4 +8,6 @@ function genPassword(){
         let ran = Math.floor(Math.random()*chars.length);
         pass += chars.substring(ran,ran+1);
     }
+    pass_el.innerText = pass;
 }
+genPassword();
